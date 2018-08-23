@@ -1,9 +1,13 @@
 # klisp
 My implementation of a lisp like language
 
+Version History
+===============
 v0.1 Added prompt to accept user input
 
 v0.2 Added MPC (parser combinator)
+
+v0.3 Klisp now accepts polish notation and prints the AST! (⌐■_■)
 
 Installation
 ============

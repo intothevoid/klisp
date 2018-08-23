@@ -39,8 +39,21 @@ int main(int argc, char** argv)
     /* Read a line of user input of maximum size 2048 */
     fgets(input, BUFF_SIZE, stdin);
 
-    /* Echo input back to user */
-    printf("No you're a %s", input);
+    // Let's parse that glorious input shall we
+    mpc_result_t r;
+
+    if (mpc_parse("<stdin>", input, Klisp, &r))
+    {
+      // Print the AST
+      mpc_ast_print(r.output);
+      mpc_ast_delete(r.output);
+    }
+    else
+    {
+      // Print error
+      mpc_err_print(r.error);
+      mpc_err_delete(r.error);
+    }
   }
 
   // Clean up
