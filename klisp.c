@@ -17,7 +17,7 @@ int main(int argc, char** argv)
 
   mpca_lang(
     MPCA_LANG_DEFAULT,
-    "
+    "                                                       \
     number      : /-?[0-9]+/ ;                              \
     operator    : '+' | '-' | '*' | '/' ;                   \
     expr        : <number> | '(' <operator> <expr>+ ')' ;   \
@@ -44,7 +44,7 @@ int main(int argc, char** argv)
   }
 
   // Clean up
-  mpc_delete(4, Number, Operator, Expr, Klisp);
+  mpc_cleanup(4, Number, Operator, Expr, Klisp);
 
   return 0;
 }
