@@ -1,7 +1,7 @@
 # klisp
 My implementation of a lisp like language
 
-![alt text](https://raw.githubusercontent.com/intothevoid/klisp/res/2018-08-25.png)
+![klisp cli](https://github.com/intothevoid/klisp/raw/master/res/2018-08-25.png)
 
 Version History
 ===============
