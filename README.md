@@ -1,6 +1,8 @@
 # klisp
 My implementation of a lisp like language
 
+![alt text](https://raw.githubusercontent.com/intothevoid/klisp/res/2018-08-25.png)
+
 Version History
 ===============
 v0.1 Added prompt to accept user input
@@ -8,6 +10,8 @@ v0.1 Added prompt to accept user input
 v0.2 Added MPC (parser combinator)
 
 v0.3 Klisp now accepts polish notation and prints the AST! (⌐■_■)
+
+v0.4 Klisp can now evaluate polish notation expressions entered by the user. See screenshot above.
 
 Installation
 ============
