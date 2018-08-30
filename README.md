@@ -13,6 +13,8 @@ v0.3 Klisp now accepts polish notation and prints the AST! (⌐■_■)
 
 v0.4 Klisp can now evaluate polish notation expressions entered by the user. See screenshot above.
 
+v0.5 Added error handling - divide by zero, invalid number, invalid operator
+
 Installation
 ============
 gcc -std=c99 -Wall klisp.c mpc.c -o parsing
